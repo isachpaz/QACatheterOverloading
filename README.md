@@ -7,3 +7,4 @@ Third-party software component:
 - NUnit
 - Moq
 
+More info @ https://github.com/isachpaz/QACatheterOverloading/wiki
