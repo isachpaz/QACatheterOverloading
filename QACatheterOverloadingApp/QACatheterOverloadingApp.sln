@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QACatheterOverloadingApp", "QACatheterOverloadingApp\QACatheterOverloadingApp.csproj", "{B4711AB8-B36F-407A-B819-1AA61FB16B7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QACatheterOverloadingLib", "QACatheterOverloadingLib\QACatheterOverloadingLib.csproj", "{9F3F6E55-2B91-4909-BBD0-DC4430D316F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QACatheterOverloadingLib.Tests", "QACatheterOverloadingLib.Tests\QACatheterOverloadingLib.Tests.csproj", "{3683D40A-A08F-4E2D-BCE1-6C558C0DFAEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4711AB8-B36F-407A-B819-1AA61FB16B7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4711AB8-B36F-407A-B819-1AA61FB16B7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4711AB8-B36F-407A-B819-1AA61FB16B7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4711AB8-B36F-407A-B819-1AA61FB16B7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F3F6E55-2B91-4909-BBD0-DC4430D316F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F3F6E55-2B91-4909-BBD0-DC4430D316F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F3F6E55-2B91-4909-BBD0-DC4430D316F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F3F6E55-2B91-4909-BBD0-DC4430D316F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3683D40A-A08F-4E2D-BCE1-6C558C0DFAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3683D40A-A08F-4E2D-BCE1-6C558C0DFAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3683D40A-A08F-4E2D-BCE1-6C558C0DFAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3683D40A-A08F-4E2D-BCE1-6C558C0DFAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77AA11A2-63BE-4463-A21B-F278D4676A1F}
+	EndGlobalSection
+EndGlobal

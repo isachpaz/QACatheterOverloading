@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F3F6E55-2B91-4909-BBD0-DC4430D316F0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QACatheterOverloadingLib</RootNamespace>
+    <AssemblyName>QACatheterOverloadingLib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\CatheterOverloaderBase.cs" />
+    <Compile Include="Interfaces\ICatheterBlocks.cs" />
+    <Compile Include="Collections\BaseDcmCollection.cs" />
+    <Compile Include="Results\ResultCollection.cs" />
+    <Compile Include="Interfaces\ICatheterOverloaderBase.cs" />
+    <Compile Include="CatheterPartition\BlockItem.cs" />
+    <Compile Include="CatheterPartition\CatheterBlocks.cs" />
+    <Compile Include="CatheterOverload\CatheterOverloaderFactory.cs" />
+    <Compile Include="CatheterOverload\NullCatheterOverloader.cs" />
+    <Compile Include="CatheterOverload\OncentraBrachyCatheterOverloader.cs" />
+    <Compile Include="CatheterOverload\OncentraProstateCatheterOverloader.cs" />
+    <Compile Include="CatheterOverload\VarianBrachyCatheterOverloader.cs" />
+    <Compile Include="Results\IResultItem.cs" />
+    <Compile Include="Results\ResultItem.cs" />
+    <Compile Include="Services\CatheterBlockService.cs" />
+    <Compile Include="Services\DicomServices.cs" />
+    <Compile Include="Enum\PlanningSystemType.cs" />
+    <Compile Include="Interfaces\IBlockItem.cs" />
+    <Compile Include="Interfaces\ICatheterOverloadingParameters.cs" />
+    <Compile Include="Interfaces\IDicomServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interfaces\ICatheterBlockService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EvilDICOM">
+      <Version>2.0.2.9</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
