@@ -1,8 +1,7 @@
-﻿
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using QACatheterOverloadingLib.Interfaces;
 
-namespace QACatheterOverloadingLib.Dicom
+namespace QACatheterOverloadingLib.Services
 {
     public class CatheterBlockService : ICatheterBlockService
     {
